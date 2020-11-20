@@ -20,7 +20,8 @@ bytes = random._urandom(1490)
 os.system("clear")
 os.system("   ARA SOFTWARE    ")
 print ""
-ip = raw_input("IP Target : ")
+host = raw_input("IP Target : ")
+ip = socket.gethostbyname(host)
 port = input("Port       : ")
 
 os.system("clear")
